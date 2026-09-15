@@ -3,415 +3,310 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carrie Williams Memorial Foundation — Euchre Tournament &amp; Fundraiser</title>
-<meta name="description" content="Join the Carrie Williams Memorial Foundation's Fifth Annual Euchre Tournament and Fundraiser, Saturday November 28, 2026, benefiting the Carrie Williams Memorial Scholarship for Diocese of Covington Catholic school students.">
+<title>Carrie Williams Memorial Foundation</title>
+<meta name="description" content="The Carrie Williams Memorial Foundation supports the Carrie Williams Memorial Scholarship for Catholic school students in Northern Kentucky, funded through our annual euchre tournament.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#2a1e22;
-    --cream:#fff7f9;
-    --paper:#fffbfc;
-    --coral:#ec7a8c;
-    --coral-deep:#c94f66;
-    --blush:#f7c3dc;
-    --orchid:#b84a9f;
-    --orchid-deep:#8f3a7c;
-    --leaf:#8bbf4a;
-    --line:rgba(42,30,34,0.12);
-    --max:1080px;
+    --ink:#241b1d;
+    --ink-soft:rgba(36,27,29,.68);
+    --paper:#fffaf9;
+    --cream:#fdf5f4;
+    --rose:#b3465c;
+    --rose-deep:#8f3448;
+    --rose-pale:#f2dbe1;
+    --line:rgba(36,27,29,.14);
+    --max:880px;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--cream);
+    background:var(--paper);
     color:var(--ink);
-    font-family:'Jost',sans-serif;
+    font-family:'Source Serif 4',serif;
     font-weight:400;
-    line-height:1.6;
+    line-height:1.65;
     -webkit-font-smoothing:antialiased;
   }
   img{max-width:100%;display:block;}
   a{color:inherit;}
-  .script{
-    font-family:'Alex Brush',cursive;
-    line-height:1;
+  .label{
+    font-family:'Jost',sans-serif;
+    font-size:13px;
+    letter-spacing:.08em;
+    font-weight:500;
+    color:var(--rose-deep);
   }
-  .wrap{
-    max-width:var(--max);
-    margin:0 auto;
-    padding:0 28px;
-  }
-  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
-  a:focus-visible, button:focus-visible{
-    outline:3px solid var(--orchid-deep);
-    outline-offset:3px;
-  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  a:focus-visible, button:focus-visible{outline:2.5px solid var(--rose-deep);outline-offset:3px;}
 
   /* ---------- Top bar ---------- */
   .topbar{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:18px 28px;
+    padding:22px 28px;
     max-width:var(--max);
     margin:0 auto;
+    font-family:'Jost',sans-serif;
   }
-  .topbar .mark{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:15px;
-    letter-spacing:.04em;
-  }
-  .topbar .mark img{width:34px;height:34px;object-fit:contain;}
-  .topbar nav{display:flex;gap:22px;font-size:14px;}
-  .topbar nav a{text-decoration:none;opacity:.75;transition:opacity .15s;}
-  .topbar nav a:hover{opacity:1;}
-  @media (max-width:640px){
-    .topbar nav{display:none;}
-  }
+  .topbar .mark{font-size:15px;letter-spacing:.02em;font-weight:500;}
+  .topbar nav{display:flex;gap:26px;font-size:14px;}
+  .topbar nav a{text-decoration:none;color:var(--ink-soft);transition:color .15s;}
+  .topbar nav a:hover{color:var(--rose-deep);}
+  @media (max-width:640px){.topbar nav{display:none;}}
 
   /* ---------- Hero ---------- */
-  .hero{
-    position:relative;
-    text-align:center;
-    padding:38px 28px 70px;
-    overflow:hidden;
+  .hero{text-align:center;padding:30px 28px 64px;}
+  .hero-mark{width:340px;margin:0 auto 22px;}
+  @media (max-width:640px){.hero-mark{width:220px;}}
+  .hero .eyebrow{
+    font-family:'Jost',sans-serif;
+    font-size:13px;
+    letter-spacing:.12em;
+    color:var(--ink-soft);
+    margin-bottom:10px;
   }
-  .hero::before{
-    content:"";
-    position:absolute;
-    top:-180px; left:50%;
-    width:760px; height:760px;
-    transform:translateX(-50%);
-    background:radial-gradient(circle, rgba(236,122,140,0.16) 0%, rgba(236,122,140,0) 70%);
-    z-index:0;
-  }
-  .hero-inner{position:relative;z-index:1;}
-  .hero-mark{width:150px;margin:0 auto 6px;}
   .hero h1{
-    font-family:'Alex Brush',cursive;
-    font-weight:400;
-    font-size:clamp(56px,10vw,92px);
-    margin:0;
-    color:var(--coral-deep);
-  }
-  .hero .subtitle{
-    font-size:clamp(15px,2.4vw,19px);
-    letter-spacing:.14em;
-    text-transform:uppercase;
+    font-size:clamp(30px,4.6vw,42px);
     font-weight:600;
-    color:var(--ink);
-    margin:2px 0 30px;
+    margin:0 0 16px;
+    letter-spacing:-.01em;
   }
-  .save-date{
-    display:inline-flex;
-    flex-direction:column;
-    gap:4px;
-    background:linear-gradient(135deg,var(--orchid) 0%, var(--orchid-deep) 100%);
-    color:#fff;
-    padding:26px 44px;
-    border-radius:4px;
-    box-shadow:0 18px 40px -18px rgba(143,58,124,.55);
+  .hero p.lede{
+    max-width:52ch;
+    margin:0 auto 30px;
+    font-size:18px;
+    color:var(--ink-soft);
   }
-  .save-date .eyebrow{
-    font-family:'Alex Brush',cursive;
-    font-size:30px;
-    line-height:1;
-  }
-  .save-date .when{
-    font-size:clamp(20px,3.4vw,26px);
-    font-weight:700;
-    letter-spacing:.03em;
-    margin-top:6px;
-  }
-  .save-date .where{
-    font-size:14.5px;
-    opacity:.92;
-  }
-  .cta-row{
-    display:flex;
-    gap:14px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-top:34px;
-  }
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
   .btn{
     display:inline-block;
-    padding:14px 30px;
-    border-radius:3px;
+    padding:13px 28px;
     text-decoration:none;
-    font-weight:600;
-    font-size:15px;
+    font-family:'Jost',sans-serif;
+    font-weight:500;
+    font-size:14.5px;
     letter-spacing:.02em;
-    transition:transform .15s ease, box-shadow .15s ease;
+    border-radius:2px;
+    transition:opacity .15s ease;
   }
-  .btn:hover{transform:translateY(-2px);}
-  .btn-primary{
-    background:var(--coral-deep);
-    color:#fff;
-    box-shadow:0 14px 28px -14px rgba(201,79,102,.7);
-  }
-  .btn-secondary{
-    background:transparent;
-    color:var(--orchid-deep);
-    border:1.5px solid var(--orchid-deep);
-  }
-  .btn-ghost{
-    background:transparent;
-    color:var(--ink);
-    border:1.5px solid var(--line);
-  }
+  .btn:hover{opacity:.85;}
+  .btn-primary{background:var(--rose-deep);color:#fff;}
+  .btn-secondary{background:transparent;color:var(--rose-deep);border:1px solid var(--rose-deep);}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
 
   /* ---------- Section shell ---------- */
-  section{padding:66px 0;}
-  .section-head{
-    max-width:640px;
-    margin:0 0 30px;
-  }
-  .section-head .kicker{
-    font-family:'Alex Brush',cursive;
-    font-size:32px;
-    color:var(--coral-deep);
-    display:block;
-    margin-bottom:2px;
-  }
+  section{padding:60px 0;}
+  .section-head{max-width:640px;margin:0 0 34px;}
+  .section-head .label{display:block;margin-bottom:8px;}
   .section-head h2{
-    font-size:clamp(24px,3.4vw,32px);
+    font-size:clamp(24px,3vw,30px);
     margin:0;
     font-weight:600;
+    letter-spacing:-.01em;
   }
-  .divider{
-    width:56px;
-    height:3px;
-    background:var(--blush);
-    border:none;
-    margin:0 auto;
-  }
+  .rule{border:none;border-top:1px solid var(--line);margin:0;}
 
-  /* ---------- Story section ---------- */
-  .story{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-  .story-grid{
+  /* ---------- Impact section ---------- */
+  .impact{background:var(--cream);}
+  .impact p.intro{max-width:62ch;font-size:17px;color:var(--ink-soft);margin-bottom:40px;}
+  .stat-row{
     display:grid;
-    grid-template-columns:220px 1fr;
-    gap:46px;
-    align-items:center;
-  }
-  .story-grid img{width:100%;}
-  .story p{font-size:16.5px;max-width:56ch;}
-  .story p + p{margin-top:16px;}
-  @media (max-width:720px){
-    .story-grid{grid-template-columns:1fr;text-align:left;}
-    .story-grid img{width:150px;margin:0 auto;}
-  }
-
-  /* ---------- Event details ---------- */
-  .details-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    grid-template-columns:repeat(3,1fr);
     gap:2px;
     background:var(--line);
     border:1px solid var(--line);
   }
-  .detail-card{
+  .stat{
     background:var(--paper);
-    padding:28px 26px;
-  }
-  .detail-card h3{
-    margin:0 0 8px;
-    font-size:15px;
-    letter-spacing:.06em;
-    text-transform:uppercase;
-    color:var(--coral-deep);
-    font-weight:600;
-  }
-  .detail-card p{margin:0;font-size:15.5px;}
-  .detail-card a{text-decoration:underline;text-decoration-color:var(--blush);text-underline-offset:3px;}
-
-  .whats-included{
-    margin-top:44px;
-  }
-  .whats-included h3{
-    font-size:15px;
-    letter-spacing:.06em;
-    text-transform:uppercase;
-    color:var(--ink);
-    opacity:.65;
-    margin-bottom:16px;
-    font-weight:600;
-  }
-  .chip-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .chip{
-    border:1.5px solid var(--blush);
-    color:var(--coral-deep);
-    padding:8px 16px;
-    border-radius:20px;
-    font-size:14px;
-    font-weight:500;
-  }
-
-  /* ---------- Support / ways to give ---------- */
-  .support{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-  .support-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:24px;
-  }
-  .support-card{
-    padding:30px 26px;
-    background:var(--cream);
-    border:1px solid var(--line);
-    border-radius:4px;
-  }
-  .support-card h3{margin:0 0 10px;font-size:19px;}
-  .support-card p{margin:0 0 20px;font-size:15px;opacity:.85;}
-
-  /* ---------- Footer ---------- */
-  footer{
-    padding:40px 0 50px;
+    padding:34px 20px;
     text-align:center;
   }
-  footer .foot-mark{width:56px;margin:0 auto 14px;}
-  footer .org-name{
-    font-family:'Alex Brush',cursive;
-    font-size:26px;
-    color:var(--coral-deep);
+  .stat .num{
+    font-size:clamp(34px,5vw,46px);
+    font-weight:600;
+    color:var(--rose-deep);
+    line-height:1;
   }
-  footer .foot-links{
-    margin-top:14px;
-    font-size:14px;
-    display:flex;
-    gap:18px;
-    justify-content:center;
-    flex-wrap:wrap;
+  .stat .cap{
+    font-family:'Jost',sans-serif;
+    font-size:13px;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+    margin-top:10px;
   }
-  footer .foot-links a{text-decoration:none;opacity:.75;}
-  footer .foot-links a:hover{opacity:1;text-decoration:underline;}
-  footer .tax{
-    margin-top:18px;
-    font-size:12.5px;
-    opacity:.55;
-    max-width:52ch;
-    margin-left:auto;
-    margin-right:auto;
+  @media (max-width:600px){
+    .stat-row{grid-template-columns:1fr;}
   }
+  .impact-note{max-width:62ch;margin-top:32px;font-size:15.5px;color:var(--ink-soft);}
+
+  /* ---------- Story section ---------- */
+  .story-grid{display:grid;grid-template-columns:170px 1fr;gap:44px;align-items:start;}
+  .story-grid img{width:100%;}
+  .story p + p{margin-top:16px;}
+  @media (max-width:720px){
+    .story-grid{grid-template-columns:1fr;}
+    .story-grid img{width:130px;margin:0 auto;}
+  }
+
+  /* ---------- Fundraiser / event section ---------- */
+  .fundraiser{background:var(--cream);}
+  .details-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px 40px;
+  }
+  @media (max-width:600px){.details-list{grid-template-columns:1fr;}}
+  .detail{border-top:1px solid var(--line);padding-top:14px;}
+  .detail .label{display:block;margin-bottom:6px;}
+  .detail p{margin:0;font-size:15.5px;}
+  .detail a{text-decoration:underline;text-decoration-color:var(--rose-pale);text-underline-offset:3px;}
+  .included{margin-top:36px;font-size:15px;color:var(--ink-soft);}
+  .included .label{display:block;margin-bottom:8px;}
+
+  /* ---------- Support ---------- */
+  .support-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+  .support-card{background:var(--paper);padding:30px 26px;}
+  .support-card h3{margin:0 0 10px;font-size:18px;font-weight:600;}
+  .support-card p{margin:0 0 20px;font-size:15px;color:var(--ink-soft);}
+
+  /* ---------- Footer ---------- */
+  footer{padding:46px 0 54px;text-align:center;}
+  footer .foot-mark{width:52px;margin:0 auto 14px;opacity:.9;}
+  footer .org-name{font-family:'Jost',sans-serif;font-size:15px;font-weight:500;}
+  footer .foot-links{margin-top:14px;font-size:14px;font-family:'Jost',sans-serif;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+  footer .foot-links a{text-decoration:none;color:var(--ink-soft);}
+  footer .foot-links a:hover{color:var(--rose-deep);text-decoration:underline;}
+  footer .tax{margin-top:18px;font-size:12.5px;color:var(--ink-soft);max-width:52ch;margin-left:auto;margin-right:auto;}
 </style>
 </head>
 <body>
 
 <div class="topbar">
-  <div class="mark">
-    <img src="assets/logo-foundation.png" alt="">
-    <span>Carrie Williams Memorial Foundation</span>
-  </div>
+  <div class="mark">Carrie Williams Memorial Foundation</div>
   <nav>
-    <a href="#story">Our Story</a>
-    <a href="#event">The Event</a>
-    <a href="#support">Get Involved</a>
+    <a href="#impact">Our Impact</a>
+    <a href="#story">Her Story</a>
+    <a href="#fundraiser">The Tournament</a>
+    <a href="#support">Give</a>
   </nav>
 </div>
 
 <header class="hero">
-  <div class="hero-inner wrap">
-    <img class="hero-mark" src="assets/logo-foundation.png" alt="Carrie Williams Memorial Foundation logo, a coral heart shaped like an apple">
-    <h1>Carrie Williams</h1>
-    <p class="subtitle">Memorial Euchre Tournament &amp; Fundraiser</p>
-
-    <div class="save-date">
-      <span class="eyebrow">Save the Date</span>
-      <span class="when">Saturday, November 28, 2026</span>
-      <span class="where">Sterling Event Center · St. Barbara Parish · Erlanger, KY</span>
-    </div>
-
+  <div class="wrap">
+    <img class="hero-mark" src="assets/logo-foundation.png" alt="Carrie Williams Memorial Foundation logo">
+    <p class="eyebrow">A 501(c)(3) nonprofit organization</p>
+    <h1>Supporting Catholic education in her memory</h1>
+    <p class="lede">The Carrie Williams Memorial Foundation funds the Carrie Williams Memorial Scholarship, helping children at Catholic schools across Northern Kentucky.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#register">Register to Play</a>
-      <a class="btn btn-secondary" href="https://www.givesendgo.com/cwmf" target="_blank" rel="noopener">Donate</a>
-      <a class="btn btn-ghost" href="https://www.facebook.com/carriewilliamsmemorial" target="_blank" rel="noopener">Follow Along</a>
+      <a class="btn btn-primary" href="https://www.givesendgo.com/cwmf" target="_blank" rel="noopener">Donate</a>
+      <a class="btn btn-secondary" href="#fundraiser">About the Tournament</a>
     </div>
   </div>
 </header>
 
-<section class="story" id="story">
+<section class="impact" id="impact">
   <div class="wrap">
+    <div class="section-head">
+      <span class="label">Our Impact</span>
+      <h2>What we've made possible</h2>
+    </div>
+    <p class="intro">Every dollar raised goes directly toward tuition support for Catholic school students in Northern Kentucky. In just four years, that support has added up.</p>
+
+    <div class="stat-row">
+      <div class="stat">
+        <div class="num">13</div>
+        <div class="cap">Scholarships Awarded</div>
+      </div>
+      <div class="stat">
+        <div class="num">$15,000</div>
+        <div class="cap">Given to Students</div>
+      </div>
+      <div class="stat">
+        <div class="num">4</div>
+        <div class="cap">Years Running</div>
+      </div>
+    </div>
+
+    <p class="impact-note">This is how we carry Carrie's legacy forward — not just in memory, but in the classrooms and futures of the students her scholarship helps support.</p>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Her Story</span>
+      <h2>Remembering Carrie Williams</h2>
+    </div>
     <div class="story-grid">
-      <img src="assets/logo-scholarship.png" alt="Carrie Williams Memorial Scholarship logo, a pink heart">
-      <div>
-        <span class="script" style="font-size:34px;color:var(--coral-deep);display:block;margin-bottom:6px;">Her story, still teaching</span>
-        <p>Carrie Williams spent her career teaching at a local Catholic school, and the way she showed up for her students left a mark that didn't end when she passed away. Her family and friends started this foundation to keep that spirit going — one euchre tournament at a time.</p>
-        <p>Every card played and every dollar raised funds the <strong>Carrie Williams Memorial Scholarship</strong>, supporting children at Catholic schools across the Diocese of Covington. Now in its fifth year, the tournament brings together about 150 players for an evening that's equal parts competitive and heartfelt.</p>
+      <img src="assets/logo-scholarship.png" alt="Carrie Williams Memorial Scholarship logo">
+      <div class="story">
+        <p>Carrie Williams spent her career teaching at a local Catholic school, and the way she showed up for her students left a mark that didn't end when she passed away. Her family and friends founded this foundation to carry that spirit forward.</p>
+        <p>The Carrie Williams Memorial Scholarship supports children at Catholic schools throughout Northern Kentucky — a lasting way of continuing the work she cared about most.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="event">
+<section class="fundraiser" id="fundraiser">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">The Evening</span>
-      <h2>What to expect on the 28th</h2>
+      <span class="label">How We Raise These Funds</span>
+      <h2>The Carrie Williams Memorial Euchre Tournament</h2>
+    </div>
+    <p class="intro" style="margin-bottom:34px;">Our scholarships are made possible by one event each year — a euchre tournament and fundraiser held every November. It's the vehicle for our mission, not the mission itself.</p>
+
+    <div class="details-list">
+      <div class="detail">
+        <span class="label">When</span>
+        <p>Saturday, November 28, 2026</p>
+      </div>
+      <div class="detail">
+        <span class="label">Where</span>
+        <p>Sterling Event Center, St. Barbara Parish<br>4042 Turkeyfoot Rd, Erlanger, KY 41018</p>
+      </div>
+      <div class="detail">
+        <span class="label">Format</span>
+        <p>Euchre tournament play with skins awarded each round, plus overall standings.</p>
+      </div>
+      <div class="detail">
+        <span class="label">Included</span>
+        <p>A full catered dinner, cash bar, and silent auction alongside the tournament.</p>
+      </div>
     </div>
 
-    <div class="details-grid">
-      <div class="detail-card">
-        <h3>When</h3>
-        <p>Saturday, November 28, 2026<br>Doors open in the evening — exact times on your registration confirmation.</p>
-      </div>
-      <div class="detail-card">
-        <h3>Where</h3>
-        <p>Sterling Event Center<br>St. Barbara Parish<br>4042 Turkeyfoot Rd, Erlanger, KY 41018</p>
-      </div>
-      <div class="detail-card">
-        <h3>Format</h3>
-        <p>Euchre tournament play with skins awarded each round, plus overall standings — bring your best game, win either way.</p>
-      </div>
-      <div class="detail-card">
-        <h3>Included</h3>
-        <p>A full catered dinner is part of your ticket, alongside the tournament, silent auction, and cash bar.</p>
-      </div>
-    </div>
-
-    <div class="whats-included">
-      <h3>Also happening that night</h3>
-      <div class="chip-row">
-        <span class="chip">Silent Auction</span>
-        <span class="chip">Split-the-Pot Raffle</span>
-        <span class="chip">Wagon of Alcohol Raffle</span>
-        <span class="chip">Cash Bar</span>
-        <span class="chip">Catered Dinner</span>
-      </div>
+    <div class="included">
+      <span class="label">Also that evening</span>
+      Silent auction &middot; split-the-pot raffle &middot; a raffle for a wagon of alcohol &middot; cash bar
     </div>
   </div>
 </section>
 
-<section class="support" id="support">
+<section id="support">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">Join in</span>
-      <h2>A few ways to be part of it</h2>
+      <span class="label">Get Involved</span>
+      <h2>Ways to support the mission</h2>
     </div>
-
     <div class="support-grid">
       <div class="support-card" id="register">
         <h3>Register to play</h3>
-        <p>Grab a spot at the table. Registration is handled through our sign-up form — team and individual spots available.</p>
+        <p>Reserve your spot at the tournament. Team and individual spots available.</p>
         <a class="btn btn-primary" href="#" aria-describedby="register-note">Register to Play</a>
-        <p id="register-note" style="margin-top:10px;font-size:12.5px;opacity:.6;">Registration link coming soon — check back or watch our Facebook page.</p>
+        <p id="register-note" style="margin-top:10px;font-size:12.5px;color:var(--ink-soft);">Registration link coming soon — check back or watch our Facebook page.</p>
       </div>
       <div class="support-card">
         <h3>Donate</h3>
-        <p>Can't make it, or want to give beyond your ticket? Every gift goes directly toward Catholic school scholarships in the Diocese of Covington.</p>
+        <p>Can't make the event? Every gift goes directly toward scholarships for Catholic school students in Northern Kentucky.</p>
         <a class="btn btn-secondary" href="https://www.givesendgo.com/cwmf" target="_blank" rel="noopener">Give via GiveSendGo</a>
       </div>
       <div class="support-card">
-        <h3>Sponsor or donate an auction item</h3>
-        <p>Businesses and families help make the silent auction and raffles possible each year. Reach out and we'll get you set up.</p>
+        <h3>Sponsor or donate an item</h3>
+        <p>Businesses and families help make our silent auction and raffles possible each year.</p>
         <a class="btn btn-ghost" href="https://www.facebook.com/carriewilliamsmemorial" target="_blank" rel="noopener">Message Us on Facebook</a>
       </div>
     </div>
@@ -427,7 +322,7 @@
       <a href="https://www.givesendgo.com/cwmf" target="_blank" rel="noopener">Donate</a>
       <a href="#register">Register</a>
     </div>
-    <p class="tax">The Carrie Williams Memorial Foundation is a 501(c)(3) nonprofit organization. Proceeds fund the Carrie Williams Memorial Scholarship for students at Catholic schools in the Diocese of Covington.</p>
+    <p class="tax">The Carrie Williams Memorial Foundation is a 501(c)(3) nonprofit organization. Proceeds fund the Carrie Williams Memorial Scholarship for students at Catholic schools in Northern Kentucky.</p>
   </div>
 </footer>
 
